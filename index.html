@@ -8,6 +8,9 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+
+        <script src=" https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js "></script>
+        <link href=" https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/site/site.min.css " rel="stylesheet">
     </head>
 
     <body>
@@ -530,6 +533,8 @@
         function updateSlideDisplay() {
             slides.forEach(slide => slide.style.display = 'none');
             document.getElementById(`slide-${currentSlide}`).style.display = 'block';
+
+            currentSlide === 11 ? lancerConfettis() : return;
 
             prevButton.disabled = currentSlide === 1;
             nextButton.disabled = currentSlide === totalSlides;
