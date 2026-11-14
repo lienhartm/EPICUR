@@ -25,14 +25,21 @@ Ceci est un petit diaporama d'une dizaine de diapositive commander par une navig
 - [Diaporama](#diaporama)
 - [Contenu](#contenu)
 
-### Navigation {#navigation}
-La naviagation permet :
-- Start présentation : débuter le diaporama
-- Pause présentation : mettre en pause
-- End présentation : forcer le diaporama à terminer
-- Restart présentation : recommencer le diaporama
-- Previous slide : diapositive suivante
-- Next slide : diapositive suivante
+## 🎮 Fonctionnalités du diaporama
+
+Le lecteur intègre une barre de contrôle complète permettant de naviguer aisément entre les diapositives :
+* ▶️ **Lecture automatique** (*Play*)
+* ⏸️ **Pause**
+* ⏹️ **Arrêt** (*Stop*)
+* 🔄 **Réinitialisation / Boucle**
+* ⬅️ ➡️ **Navigation manuelle** (Diapositive précédente / suivante)
+
+## 🛠️ Technologies utilisées
+
+* **HTML5** : Structuration des diapositives et des contrôles.
+* **CSS3** : Mise en page, animations et design du slider.
+* **JavaScript** : Logique de défilement automatique, gestion des événements et navigation interactive.
+* **GitHub Pages** : Hébergement du projet.
 
 [retour]()
 
@@ -181,9 +188,8 @@ Diapo de fin
 
 #### Musique
 
-##### ./musique
+##### ./musique
 - ./Jolinn_Pet_House.mp3
 
 [retour]()
 
-# EPICUR
