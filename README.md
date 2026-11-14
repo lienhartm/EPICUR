@@ -16,7 +16,6 @@ Projet réalisé dans le cadre de de la « Scrum Week » :
 Des liens direct pour en savoir un peu plus :
 - [EPICUR](https://www.uha.fr/fr/international/epicur-universite-europeenne.html)
 - [LAS EPICUR](https://www.uha.fr/fr/actualites-agenda-1/ca-s-est-passe-a-l-uha/le-programme-las-epicur.html)
-- [CONFLUENCE](https://confluence.uha4point0.fr/spaces/EP/pages/182293530/Movie+Project+explanation+2024)
 
 ## Description
 
