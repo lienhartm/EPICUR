@@ -2,7 +2,7 @@
 
 Ceci est un projet **EPICUR** de l'**UHA 4.0** de début d'année 401 en 2023.
 
-website : https://lienhartm.github.io/EPICUR/
+Online website : https://lienhartm.github.io/EPICUR/
 
 ## Projet
 
