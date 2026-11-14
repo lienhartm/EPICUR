@@ -8,9 +8,10 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+        
+        <!-- Installation via CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 
-        <!--<script src=" https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js "></script>-->
-        <!--<link href=" https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/site/site.min.css " rel="stylesheet">-->
     </head>
 
     <body>
@@ -534,7 +535,10 @@
             slides.forEach(slide => slide.style.display = 'none');
             document.getElementById(`slide-${currentSlide}`).style.display = 'block';
 
-            currentSlide === 11 ? lancerConfettis() : return;
+            if (currentSlide === 11) {
+                await jsConfetti.addConfetti()
+                console.log('Célébration terminée !')
+            }
 
             prevButton.disabled = currentSlide === 1;
             nextButton.disabled = currentSlide === totalSlides;
@@ -613,29 +617,23 @@
         // Initial display
         updateSlideDisplay();
 
-        function lancerConfettis() {
-          const duration = 3 * 1000; // Durée de 3 secondes
-          const end = Date.now() + duration;
+        // Confetti
+
+        // Utilisation basique
+        const jsConfetti = new JSConfetti()
         
-          (function frame() {
-            confetti({
-              particleCount: 5,
-              angle: 60,
-              spread: 55,
-              origin: { x: 0 } // Tire depuis la gauche
-            });
-            confetti({
-              particleCount: 5,
-              angle: 120,
-              spread: 55,
-              origin: { x: 1 } // Tire depuis la droite
-            });
+        // Déclencher des confettis colorés
+        jsConfetti.addConfetti({
+          confettiColors: ['#ff0a54', '#ff477e', '#ff7096'],
+          confettiNumber: 100
+        })
         
-            if (Date.now() < end) {
-              requestAnimationFrame(frame);
-            }
-          }());
-        }
+        // Ou utiliser des emojis
+        jsConfetti.addConfetti({
+          emojis: ['🎉', '✨', '💫', '🎊'],
+          emojiSize: 50,
+          confettiNumber: 30
+        })
 
     </script>
 <!--
